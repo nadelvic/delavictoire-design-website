@@ -4,5 +4,15 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
     typescript: {
         shim: false
-      }
+    },
+    
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@import "@/assets/scss/global.scss";',
+                },
+            },
+        },
+    }
 })
