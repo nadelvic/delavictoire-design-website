@@ -4,7 +4,7 @@
         <a href="mailto:nathan@delavictoire.design">nathan@delavictoire.design</a>
         </p>
         <p>
-         I’m currently located in Paris and can work with clients all around Western Europe partially remotely. 
+         I’m currently located in Paris and can work partially remotely with clients all around western europe. 
         </p>
         <br />
         <br />

@@ -11,24 +11,29 @@
 </script>
 
 <template>
-    <NuxtLayout :name="layoutName" >
-        <div class="home">
-
-            <div class="home__hat grid-8">
-                <h2>Hello, I'm <strong>Nathan Delavictoire</strong>, <br/>
-                I'm a <span class="yellow-underline">strategic designer</span>  and an <span class="yellow-underline">interaction designer</span>.
+    <div>
+        <div class="landing-content grid_7 offset_1">
+            <div class="home__hat">
+            <h2>Hello, I'm <strong>Nathan Delavictoire</strong>, <br/>
+            I'm a <span class="yellow-underline">strategic designer</span>  and an <span class="yellow-underline">interaction designer</span>.
             </h2>
             </div>
 
-            <div class="skills-container grid-8">
+            <div class="skills-container">
                 <SkillCover :title="skill1.title" :description="skill1.description" />
                 <SkillCover :title="skill2.title" :description="skill2.description" />
             </div>
             <div class="findme-container">
                 <FindMeInformation />
             </div> 
-        </div>
-    </NuxtLayout>  
+        </div> 
+        <div class="grid_3">
+            <div class="illustration-container">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+        </div>   
+    </div> 
 </template>
 
 
@@ -43,7 +48,7 @@
         //background-color:$g850;
     }
     .home__hat {
-        margin-top:25vh;
+        margin-top:10vh;
         h2 {
             font-weight:$regular;
         }
@@ -64,5 +69,35 @@
     .findme-container {
         margin-top:4rem;
     }
+    // Illustration
+    .illustration-container{
+        //background-color:lightGrey;
+        position:relative;
+        width:100%;
+        margin:10rem auto;
+        height:0;
+        padding-bottom:100%;
+        .circle1 {
+            position:absolute;
+            right:0;
+            width:80%;
+            height:0;
+            padding-bottom:80%;
+            border:1px solid $g75;
+            border-radius:80%;  
+        }
+        .circle2 {
+            position:absolute;
+            left:0;
+            bottom:0;
+            width:50%;
+            height:0;
+            padding-bottom:50%;
+            border: 1px solid $g75;
+            border-radius:50%;
+        }
+
+    }
+
 </style>
 

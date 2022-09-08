@@ -1,0 +1,37 @@
+<script setup>
+    useHead({
+        title: 'Delavictoire Design',
+        link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
+    })
+</script>
+
+<template>
+  <div>
+    <Header />
+    <SectionLanding id="Landing" class="section row container_12 fluid white" />
+    <SectionServices id="services" class="section row container_12 fluid lightGrey" />
+  </div>
+</template>
+
+<style lang="scss">
+    .section{
+        padding-bottom:4rem;
+        min-height:40vh;
+
+    }
+    .white{
+        background-color:white;
+        //border:1px solid #ff0000;
+        box-sizing:border-box;
+        margin-bottom:1px;
+    }
+    .lightGrey{
+        background-color:$g850;
+    }
+    .darkGrey {
+        background-color:$g75;
+    }
+
+   
+</style>
+

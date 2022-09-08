@@ -1,0 +1,31 @@
+<script>
+    export default {
+        id: {
+            default: 'Home',
+            type: String
+        },
+        backgroundColor: {
+            default: 'white',
+            type: String
+        }
+    }
+</script>
+<template>
+    <div id={{id}} class='section row container_12 fluid {{backgroundColor}}'>
+        <slot />
+    </div>
+</template>
+<style lang="scss">
+    .section {
+        min-height:100vh;
+    }
+    .white{
+        background-color:white;
+    }
+    .lightGrey{
+        background-color:$g850;
+    }
+    .darkGrey {
+        background-color:$g75;
+    }
+</style>

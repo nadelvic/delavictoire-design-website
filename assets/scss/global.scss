@@ -70,7 +70,7 @@ i {
 a {
     text-decoration:none;
     color:$g75;
-    transition:all .5s;
+    transition:background-position .5s;
     padding-bottom:5px;
     position:relative;
     background-image: linear-gradient(to right, $focusYellow 0%, $focusYellow 100%);

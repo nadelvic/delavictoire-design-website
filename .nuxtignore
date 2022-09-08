@@ -1,0 +1,6 @@
+# This file enables the ignoring of some layout, pages and components
+# fonts
+assets/fonts/maison-neue/*.ttf
+assets/fonts/maison-neue/*.woff
+assets/fonts/maison-neue/*.woff2
+
