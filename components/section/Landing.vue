@@ -14,7 +14,7 @@
     <div>
         <div class="landing-content grid_7 offset_1">
             <div class="home__hat">
-            <h2>Hello, I'm <strong>Nathan Delavictoire</strong>, <br/>
+            <h2>{{$t('landing.welcome.part1')}} <strong>Nathan Delavictoire</strong>, <br/>
             I'm a <span class="yellow-underline">strategic designer</span>  and an <span class="yellow-underline">interaction designer</span>.
             </h2>
             </div>

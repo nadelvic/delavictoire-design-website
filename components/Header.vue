@@ -7,7 +7,7 @@
             <div class="menu-item">Offer</div>
             <div class="menu-item">Work</div>
             <div class="menu-item">Blog</div>
-            <div class="menu-item lang">en/fr</div>
+            <LangNavigation class="menu-item lang" />
         </div>
     </div>
 </template>

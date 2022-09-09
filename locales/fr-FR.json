@@ -1,0 +1,34 @@
+{
+    "landing" : {
+        "welcome" : {
+            "part1": "Bonjour, je suis",
+            "part2": "Je suis un",
+            "skill1": "designer stratégique",
+            "part3": "et un",
+            "skill2": "designer d'interactions"
+        },
+        "skills": {
+            "strategicDesign" : {
+                "hat" : "En tant que designer stratégique",
+                "description" : "J'aide à redéfinir la manière dont les problèmes sont abordés et identifie et structure les espaces d'opportunités qui leurs sont associés. J'accompagne la prise de décision."
+            },
+            "interactionDesign" : {
+                "hat" : "En tant que designer d'interaction",
+                "description" : "Je conçoit de nouveau produit numérique en prenant en compte ses usagers : application métier, site web, services numériques …"
+            }
+        }
+       
+    },
+    "menu" : {
+        "blog" : "Blog",
+        "work" : "Mes travaux",
+        "services" : "Mes services"
+    },
+    "services": {
+        "title": "Mes Services"
+    }
+
+
+  
+    
+}

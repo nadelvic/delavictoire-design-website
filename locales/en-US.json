@@ -1,0 +1,34 @@
+{
+    "landing" : {
+        "welcome" : {
+            "part1": "Hello, I'm",
+            "part2": "I'm a",
+            "skill1": "strategic designer",
+            "part3": "and an",
+            "skill2": "interaction designer"
+        },
+        "skills": {
+            "strategicDesign" : {
+                "hat" : "As a strategic designer",
+                "description" : "I help frame problems and identify opportunity spaces that may solve them. To do so I accompany the decision process through deciphering complexity."
+            },
+            "interactionDesign" : {
+                "hat" : "As an interaction designer",
+                "description" : "I define and prototype new digital products with a user centric approach : Business applications, Website, Digital Services …"
+            }
+        }
+       
+    },
+    "menu" : {
+        "blog" : "Blog",
+        "work" : "Work",
+        "services" : "My Services"
+    },
+    "services": {
+        "title": "My Services"
+    }
+
+
+  
+    
+}
