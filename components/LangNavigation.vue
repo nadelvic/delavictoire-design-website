@@ -6,22 +6,15 @@
     export default {
         data() {
             return {
-                stateEN : 'activated',
-                stateFR : ''
+                enActive: true
             }
         },
         methods: {
-            async setLanguage(langCode){
+            async setLanguage(langCode){   
                 this.$i18n.locale = langCode;
-                if(langCode == 'en'){
-                    console.log('yes EN')
-                    this.stateEN = 'activated';
-                    this.stateFR = ''
-                } else if (langCode == 'fr'){
-                    this.stateEN = '',
-                    this.stateFR = 'activated'
-                }
-            }
+                this.enActive = (langCode == 'en') ? true : false; 
+                console.log(this.enActive);
+            },
         }
     }
        
@@ -29,9 +22,9 @@
 
 <template>
     <div>
-        <button id="en" class="lang-switch {{this.stateEN}}" @click="setLanguage('en')">en</button>
+        <button id="en" class='lang-switch' :class="{active :this.enActive}" @click="setLanguage('en')">en</button>
         /
-        <button id="fr" class="lang-switch {{this.stateFR}}" @click="setLanguage('fr')">fr</button>            
+        <button id="fr" class="lang-switch" :class="{active: !this.enActive}" @click="setLanguage('fr')">fr</button>            
     </div>
 </template>
 <style lang="scss">
@@ -48,7 +41,7 @@
             background-size: 100% .2rem;  
 
         }
-        &.activated{
+        &.active{
             background-image: linear-gradient(to right, $focusYellow 0%, $focusYellow 100%);
             background-repeat: repeat-x; 
             background-position: 0% 70%; 
