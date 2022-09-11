@@ -8,6 +8,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "^0.5.0",
     "@nuxtjs/style-resources": "^1.2.1",
     "fibers": "^5.0.3",
     "node-sass": "^7.0.3",
@@ -15,5 +16,8 @@
     "sass": "^1.54.8",
     "sass-loader": "^10.3.1",
     "vue-i18n": "^9.2.2"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^8.0.0-alpha.1"
   }
 }

@@ -1,30 +1,19 @@
 <!-- LangNavigation.vue -->
-
-
-<script>
-    
-    export default {
-        data() {
-            return {
-                enActive: true
-            }
-        },
-        methods: {
-            async setLanguage(langCode){   
-                this.$i18n.locale = langCode;
-                this.enActive = (langCode == 'en') ? true : false; 
-                console.log(this.enActive);
-            },
-        }
+<script setup>  
+    const { locale, setLocale } = useI18n();
+    function setLanguage(langCode) {   
+        setLocale(langCode)
+        enActive = (langCode == 'en') ? true : false;   
     }
-       
+  
 </script>
 
 <template>
     <div>
-        <button id="en" class='lang-switch' :class="{active :this.enActive}" @click="setLanguage('en')">en</button>
+   
+        <button id="en" class='lang-switch' :class="{active: (locale == 'en')}" @click="setLanguage('en')">en</button>
         /
-        <button id="fr" class="lang-switch" :class="{active: !this.enActive}" @click="setLanguage('fr')">fr</button>            
+        <button id="fr" class="lang-switch" :class="{active: (locale == 'fr')}" @click="setLanguage('fr')">fr</button>            
     </div>
 </template>
 <style lang="scss">

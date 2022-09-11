@@ -1,28 +1,23 @@
 <script setup>
-    const layoutName = 'default';
-    const skill1 = {
-        title: 'As a strategic designer',
-        description: '\u2192  I help organisations frame, position and communicate new ideas to solve problems.'        
-    }
-    const skill2 = {
-        title: 'As an interaction designer',
-        description: '\u2192 I define and prototype new digital products : Business applications, Website, Digital Services …'        
-    }
+    const { t  } = useI18n()
 </script>
-
 <template>
     <div>
         <div class="landing-content grid_7 offset_1">
             <div class="home__hat">
             <h2>{{$t('landing.welcome.part1')}} <strong>Nathan Delavictoire</strong>, <br/>
-            I'm a <span class="yellow-underline">strategic designer</span>  and an <span class="yellow-underline">interaction designer</span>.
+            {{$t('landing.welcome.part2')}} <span class="yellow-underline"> {{$t('landing.welcome.skill1')}}</span>   {{$t('landing.welcome.part3')}} <span class="yellow-underline"> {{$t('landing.welcome.skill2')}}</span>.
             </h2>
             </div>
 
             <div class="skills-container">
-                <SkillCover :title="skill1.title" :description="skill1.description" />
-                <SkillCover :title="skill2.title" :description="skill2.description" />
-            </div>
+                <SkillCover 
+                    :title="t('landing.skills.strategicDesign.hat')" 
+                    :description="t('landing.skills.strategicDesign.description')" />
+                <SkillCover 
+                    :title="t('landing.skills.interactionDesign.hat')" 
+                    :description="t('landing.skills.interactionDesign.description')" />
+            </div> 
             <div class="findme-container">
                 <FindMeInformation />
             </div> 

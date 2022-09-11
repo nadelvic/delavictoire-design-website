@@ -16,8 +16,13 @@
                 "hat" : "As an interaction designer",
                 "description" : "I define and prototype new digital products with a user centric approach : Business applications, Website, Digital Services …"
             }
+        },
+        "findme" : {
+            "contactme" : "You may contact me by email",
+            "located" : "I’m currently located in Paris and can work partially remotely with clients all around western europe.",
+            "stayTuned": "Stay tuned for more on this website\u00A0!"
         }
-       
+        
     },
     "menu" : {
         "blog" : "Blog",
@@ -26,9 +31,10 @@
     },
     "services": {
         "title": "My Services"
-    }
-
-
-  
-    
+    }  
 }
+
+
+
+
+

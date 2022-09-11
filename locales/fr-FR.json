@@ -16,8 +16,12 @@
                 "hat" : "En tant que designer d'interaction",
                 "description" : "Je conçoit de nouveau produit numérique en prenant en compte ses usagers : application métier, site web, services numériques …"
             }
-        }
-       
+        },
+        "findme" : {
+            "contactme" : "Vous pouvez me contacter par email : ",
+            "located" : "Je suis installé à Paris et je peux travailler partiellement à distance pour des clients dans toute l’europe de l’ouest.",
+            "stayTuned": "Revenez vite pour plus de contenu sur ce site\u00A0!"
+        }    
     },
     "menu" : {
         "blog" : "Blog",
@@ -26,9 +30,5 @@
     },
     "services": {
         "title": "Mes Services"
-    }
-
-
-  
-    
+    }        
 }

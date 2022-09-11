@@ -1,14 +1,14 @@
 <template>
     <div class="find-me fs-22">
-        <p><strong>You may contact me by email : </strong><br />
+        <p><strong> {{$t('landing.findme.contactme')}} </strong><br />
         <a href="mailto:nathan@delavictoire.design">nathan@delavictoire.design</a>
         </p>
         <p>
-         I’m currently located in Paris and can work partially remotely with clients all around western europe. 
+         {{$t('landing.findme.located')}}
         </p>
         <br />
         <br />
-        Stay tunned for more on this website !
+        {{$t('landing.findme.stayTuned')}}
 
     </div>
 </template>

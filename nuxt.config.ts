@@ -37,5 +37,30 @@ export default defineNuxtConfig({
                 },
             },
         },
+        plugins: [ ]
+    },
+    modules: [
+        '@nuxtjs/i18n',
+    ],
+    i18n: {
+        legacy: false,
+        locales: [
+            {
+                code: 'en',
+                iso: 'en-US',
+                file: 'en-US.json'
+            },
+            {
+                code: 'fr',
+                iso: 'fr-FR',
+                file: 'fr-FR.json'
+            }
+        ],
+        lazy: true,
+        langDir: 'locales/',
+        defaultLocale: 'en',
+        vueI18n: {
+            fallbackLocale: 'en'
+        }
     }
 })

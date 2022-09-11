@@ -3,6 +3,8 @@
         title: 'Delavictoire Design',
         link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
     })
+    //const translated = ref(t(translateMe));
+    
 </script>
 
 <template>
