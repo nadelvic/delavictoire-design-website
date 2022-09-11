@@ -4,9 +4,9 @@
             <Logo />
         </div>
         <div class="menu">
-            <div class="menu-item">Offer</div>
+            <!---<div class="menu-item">Offer</div>
             <div class="menu-item">Work</div>
-            <div class="menu-item">Blog</div>
+            <div class="menu-item">Blog</div>-->
             <LangNavigation class="menu-item lang" />
         </div>
     </div>
@@ -17,7 +17,7 @@
         justify-content:space-between;
         align-items:center;
         height:6rem;
-        border-bottom:1px solid $g850;
+        //border-bottom:1px solid $g850;
         box-sizing:border-box;
         .logo-container {
             margin-left:4rem;

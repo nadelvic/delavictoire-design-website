@@ -11,19 +11,22 @@
   <div>
     <Header />
     <SectionLanding id="Landing" class="section row container_12 fluid white" />
-    <SectionServices id="services" class="section row container_12 fluid lightGrey" />
+    <!--<SectionServices id="services" class="section row container_12 fluid lightGrey" />-->
+    <Footer />
   </div>
 </template>
 
 <style lang="scss">
     .section{
-        padding-bottom:4rem;
+        //padding-bottom:2rem;
         min-height:40vh;
+        
 
     }
+    
     .white{
         background-color:white;
-        //border:1px solid #ff0000;
+    
         box-sizing:border-box;
         margin-bottom:1px;
     }

@@ -10,7 +10,7 @@
         "skills": {
             "strategicDesign" : {
                 "hat" : "As a strategic designer",
-                "description" : "I help frame problems and identify opportunity spaces that may solve them. To do so I accompany the decision process through deciphering complexity."
+                "description" : "I help frame problems and identify opportunity spaces that may solve them. To do so I accompany the decision process by deciphering complexity."
             },
             "interactionDesign" : {
                 "hat" : "As an interaction designer",
@@ -31,7 +31,11 @@
     },
     "services": {
         "title": "My Services"
-    }  
+    } ,
+    "footer": {
+        "message1": "Created and developped by Nathan Delavictoire with",
+        "message2": "and a bit of"    
+    } 
 }
 
 

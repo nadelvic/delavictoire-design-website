@@ -22,7 +22,7 @@ body{
     position:absolute;
     top:0;
     left:0;
-    //font-size:$normal;
+    //font-size:$p18;
     background-color:$white;
     min-height:1000px;
     width:100%;
@@ -54,7 +54,7 @@ h2 {
 }
 
 p {
-    font-size:$p18;
+    font-size:$normal;
     margin-bottom:1rem;
 }
 
@@ -70,16 +70,15 @@ i {
 a {
     text-decoration:none;
     color:$g75;
-    transition:background-position .5s;
-    padding-bottom:5px;
+    transition:background-position .2s;
+    padding-bottom:0px;
     position:relative;
-    background-image: linear-gradient(to right, $focusYellow 0%, $focusYellow 100%);
+    background-image: linear-gradient(to right, $g75 0%, $g75 100%);
     background-repeat: repeat-x; 
-    background-position: 0% 120%; 
-    background-size: 100% .2rem;  
+    background-position: 0% 115%; 
+    background-size: 100% 1px;  
     &:hover {
         background-position: 0% 100%; 
-  
     }
         
     

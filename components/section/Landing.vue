@@ -36,7 +36,7 @@
 <style lang="scss">
 
     .home{
-        height:100%;
+        height:90%;
         display:block;
         position:absolute;
         top:0;
@@ -62,6 +62,7 @@
         align-items: flex-start;
     }
     .findme-container {
+        font-size: $normal;
         margin-top:4rem;
     }
     // Illustration
