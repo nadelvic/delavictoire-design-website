@@ -75,11 +75,9 @@ a {
     position:relative;
     background-image: linear-gradient(to right, $g75 0%, $g75 100%);
     background-repeat: repeat-x; 
-    background-position: 0% 115%; 
+    background-position: 0% 100%; 
     background-size: 100% 1px;  
-    &:hover {
-        background-position: 0% 100%; 
-    }
+   
         
     
 }

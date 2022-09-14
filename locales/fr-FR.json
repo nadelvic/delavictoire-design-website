@@ -10,11 +10,11 @@
         "skills": {
             "strategicDesign" : {
                 "hat" : "En tant que designer stratégique",
-                "description" : "J'aide à redéfinir la manière dont les problèmes sont abordés et identifie et structure les espaces d'opportunités qui leurs sont associés. J'accompagne la prise de décision."
+                "description" : "J'accompagne la formulation et la résolution de problématiques pour des systèmes complexes nécéssitant la compréhension de nombreux points de vues et spécialités."
             },
             "interactionDesign" : {
                 "hat" : "En tant que designer d'interaction",
-                "description" : "Je conçoit de nouveau produit numérique en prenant en compte ses usagers : application métier, site web, services numériques …"
+                "description" : "Je conçoit de nouveaux produits numériques en prenant en compte ses usagers : application métier, site web, services numériques …"
             }
         },
         "findme" : {

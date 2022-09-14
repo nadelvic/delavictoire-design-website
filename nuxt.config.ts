@@ -7,6 +7,12 @@ export default defineNuxtConfig({
     ** See https://nuxtjs.org/api/configuration-target
     */
     target: 'static',
+    //ssr: false,
+    nitro: {
+        prerender: {
+          routes: ['/', '/fr']
+        }
+    },
     /*
     ** Headers of the page
     ** See https://nuxtjs.org/api/configuration-head
@@ -22,7 +28,7 @@ export default defineNuxtConfig({
             content: process.env.npm_package_description || ''
         }
         ],
-        link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
+        link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     },
 
     typescript: {
