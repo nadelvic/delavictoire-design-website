@@ -1,36 +1,42 @@
 <!-- LangNavigation.vue -->
-<script setup>  
-    const { locale, setLocale } = useI18n();
-    function setLanguage(langCode) {   
-        setLocale(langCode)
-        enActive = (langCode == 'en') ? true : false;   
+<script setup > 
+
+ function switchLang(lang){
+        if(lang == 'fr') navigateTo('/fr');
+        console.log('switch');
+        //refreshNuxtData('articles');
+        return null;
     }
+
+   
+    
   
 </script>
 
 <template>
     <div>
-   
-        <button id="en" class='lang-switch' :class="{active: (locale == 'en')}" @click="setLanguage('en')">en</button>
+        <nuxt-link class="lang-switch"  :to="switchLocalePath('en')">en</nuxt-link>
         /
-        <button id="fr" class="lang-switch" :class="{active: (locale == 'fr')}" @click="setLanguage('fr')">fr</button>            
+        <nuxt-link class="lang-switch"  :to="switchLocalePath('fr')">fr</nuxt-link>
     </div>
 </template>
 <style lang="scss">
-    .lang-switch{
+    a.lang-switch{
         font-weight:bold;
         border:none;
         box-shadow:0;
+        text-decoration:none;
         background-color:transparent;
+        padding:.5rem;
+        background-image:none;
         cursor:pointer;
         &:hover{
             background-image: linear-gradient(to right, $focusYellow 0%, $focusYellow 100%);
             background-repeat: repeat-x; 
             background-position: 0% 100%; 
             background-size: 100% .2rem;  
-
         }
-        &.active{
+        &.router-link-active{
             background-image: linear-gradient(to right, $focusYellow 0%, $focusYellow 100%);
             background-repeat: repeat-x; 
             background-position: 0% 70%; 
@@ -39,3 +45,10 @@
         }
     }
 </style>
+
+
+<!--
+        <button id="en" class='lang-switch' :class="{active: (locale == 'en')}" @click="setLanguage('en')">en</button>
+        /
+        <button id="fr" class="lang-switch" :class="{active: (locale == 'fr')}" @click="setLanguage('fr')">fr</button> 
+        -->

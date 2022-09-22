@@ -38,21 +38,8 @@
             max-width:70%;
             margin-bottom:45px;
             padding:.8rem 2rem .7rem 2rem ;
-           
-        
-           
-            a {
-            overflow:visible; 
-            &:after{
-                content:'';
-                display:block;
-                position:absolute;
-                bottom:-2px;
-                width:100%;
-                border-bottom:1px solid $footerColor ;
-            }
             color:$footerColor ;  
-            }
+            
         }
        
     }

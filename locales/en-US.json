@@ -32,10 +32,16 @@
     "services": {
         "title": "My Services"
     } ,
+    "work": {
+        "title": "Work cases"
+    },
     "footer": {
         "message1": "Created and developped by Nathan Delavictoire with",
         "message2": "and a bit of"    
-    } 
+    },
+    "error": {
+        "message404": "La page n'a pas été trouvée."
+    }  
 }
 
 

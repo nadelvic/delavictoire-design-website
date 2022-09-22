@@ -31,8 +31,14 @@
     "services": {
         "title": "Mes Services"
     },
+    "work": {
+        "title": "Précédents travaux"
+    },
     "footer": {
         "message1": "Crée et développé par Nathan Delavictoire avec",
         "message2": "et un peu de"    
-    }   
+    },
+    "error": {
+        "message404": "La page n'a pas été trouvée."
+    }  
 }

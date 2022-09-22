@@ -22,6 +22,7 @@
                 <FindMeInformation />
             </div> 
         </div> 
+     
         <div class="grid_3">
             <div class="illustration-container">
                 <div class="circle1"></div>

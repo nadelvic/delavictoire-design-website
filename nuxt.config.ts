@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt'
+import { resolve } from "path";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -45,11 +45,9 @@ export default defineNuxtConfig({
         },
         plugins: [ ]
     },
-    modules: [
-        '@nuxtjs/i18n',
-    ],
+   
     i18n: {
-        legacy: false,
+        //legacy: false,
         locales: [
             {
                 code: 'en',
@@ -68,5 +66,17 @@ export default defineNuxtConfig({
         vueI18n: {
             fallbackLocale: 'en'
         }
+    },
+    modules: [
+        '@nuxtjs/i18n',
+        '@nuxt/content'
+    ],
+    content: {
+        base: '/content'
     }
 })
+
+/* 
+Important when you want to render with queryContent
+https://github.com/nuxt/content/issues/1188
+*/
