@@ -1,19 +1,27 @@
 <script setup>
+  import { createError } from 'h3';
   const lang = useI18n().locale.value;
   const route = useRoute();
   let path = route.fullPath;
   if(!path.includes('/fr/')) path = '/en'+route.fullPath;
 
-  //const { data } = await useAsyncData('home', () => queryContent('/fr/work/capqualif').findOne())
+  const { data: posts, error } = await useAsyncData(`content-${path}`, () => {
+  return queryContent().where({ _path: path }).findOne();
+  });
+  if (error.value) {
+    throwError(
+      createError({
+        statusCode: 404,
+        statusMessage: 'Not Found',
+      })
+    );
+  }
 </script>
 
 <template>
-    <div>
-      <h2>Article Work</h2>
-      <p>{{path}}</p>
-      <ContentDoc :path="path" />
-   
-    </div>
+      <main>
+          <ContentRenderer :v-if="posts" :value="posts" />
+      </main>
 </template>
 
 

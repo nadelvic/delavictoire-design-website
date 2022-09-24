@@ -3,6 +3,7 @@
         title: 'Delavictoire Design',
         link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
     })
+
     //const translated = ref(t(translateMe));
     
 </script>
@@ -11,7 +12,7 @@
   <div>
     <Header />
     <SectionLanding id="Landing" class="section row container_12 fluid white" />
-    <SectionWork />
+    <SectionWork id="work" class="section row container_12 fluid white" />
    
     <Footer />
   </div>

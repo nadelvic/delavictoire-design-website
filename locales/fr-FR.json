@@ -14,7 +14,7 @@
             },
             "interactionDesign" : {
                 "hat" : "En tant que designer d'interaction",
-                "description" : "Je conçoit de nouveaux produits numériques en prenant en compte ses usagers : application métier, site web, services numériques …"
+                "description" : "Je conçoit de nouveaux produits numériques en prenant en compte ses usagers : applications métiers, sites web, services numériques …"
             }
         },
         "findme" : {
@@ -35,7 +35,7 @@
         "title": "Précédents travaux"
     },
     "footer": {
-        "message1": "Crée et développé par Nathan Delavictoire avec",
+        "message1": "Créée et développé par Nathan Delavictoire avec",
         "message2": "et un peu de"    
     },
     "error": {

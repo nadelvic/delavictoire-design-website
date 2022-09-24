@@ -9,9 +9,10 @@ export default defineNuxtConfig({
     target: 'static',
     //ssr: false,
     nitro: {
-        prerender: {
+        preset: 'service-worker',
+        /*prerender: {
           routes: ['/', '/fr']
-        }
+        }*/
     },
     /*
     ** Headers of the page
@@ -72,11 +73,16 @@ export default defineNuxtConfig({
         '@nuxt/content'
     ],
     content: {
-        base: '/content'
+        base: '/content',
+        //locales: ['en','fr'],
+        //defaultLocale: 'en'
+    
+
     }
 })
 
 /* 
 Important when you want to render with queryContent
 https://github.com/nuxt/content/issues/1188
+https://content.nuxtjs.org/guide/deploy/static-hosting
 */
