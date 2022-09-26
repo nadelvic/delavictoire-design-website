@@ -1,0 +1,16 @@
+<template>
+    <div>
+        <h1>{{$t("aboutme.title")}}</h1>
+        <p>{{$t("aboutme.paragraph1", {age: 31})}}</p>
+        <p>{{$t("aboutme.paragraph2")}}</p>
+        <p>{{$t("aboutme.strategicDesign.beginning")}}&nbsp;
+            <span class="yellow-underline">{{$t("aboutme.strategicDesign.skill")}}</span>
+            {{$t("aboutme.strategicDesign.description")}}
+
+        </p>
+        <p>{{$t("aboutme.interactionDesign.beginning")}}
+            <span class="yellow-underline">{{$t("aboutme.interactionDesign.skill")}}</span>
+            {{$t("aboutme.interactionDesign.description")}}
+        </p>
+    </div>
+</template>

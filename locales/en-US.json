@@ -1,28 +1,28 @@
 {
     "landing" : {
-        "welcome" : {
-            "part1": "Hello, I'm",
-            "part2": "I'm a",
-            "skill1": "strategic designer",
-            "part3": "and an",
-            "skill2": "interaction designer"
-        },
-        "skills": {
-            "strategicDesign" : {
-                "hat" : "As a strategic designer",
-                "description" : "I accompany the problem framing for complex systems requiring the understanding of numerous point of views and expertises."
-            },
-            "interactionDesign" : {
-                "hat" : "As an interaction designer",
-                "description" : "I define and prototype new digital products with a user centric approach : Business applications, Website, Digital Services …"
-            }
-        },
+        "hello": "Hello, I'm Nathan Delavictoire",
+        "Iam": "I strive to crack the complexity of making things simple and meaningfull. To do so, I love navigating the grey area between imagination and rationalisation.",
         "findme" : {
             "contactme" : "You may contact me by email",
             "located" : "I’m currently located in Paris and can work partially remotely with clients all around western europe.",
             "stayTuned": "Stay tuned for more on this website\u00A0!"
         }
         
+    },
+    "aboutme" : {
+        "title": "About me",
+        "paragraph1": "I'm {age} year old designer and I'm a curious person always eager to learn from other’s perspectives and experiences.",
+        "paragraph2": "My focus as a professional lies mostly in strategic design and interaction design.",
+        "strategicDesign" : {
+            "beginning": "As a",
+            "skill" : "As a strategic designer",
+            "description" : "I accompany the problem framing for complex systems requiring the understanding of numerous point of views and expertises."
+        },
+        "interactionDesign" : {
+            "beginning": "As an",
+            "hat" : "interaction designer",
+            "description" : "I define and prototype new digital products with a user centric approach : Business applications, Website, Digital Services …"
+        }
     },
     "menu" : {
         "blog" : "Blog",

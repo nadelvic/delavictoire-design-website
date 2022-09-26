@@ -3,32 +3,24 @@
 </script>
 <template>
     <div>
-        <div class="landing-content grid_7 offset_1">
-            <div class="home__hat">
-            <h2>{{$t('landing.welcome.part1')}} <strong>Nathan Delavictoire</strong>, <br/>
-            {{$t('landing.welcome.part2')}} <span class="yellow-underline"> {{$t('landing.welcome.skill1')}}</span>   {{$t('landing.welcome.part3')}} <span class="yellow-underline"> {{$t('landing.welcome.skill2')}}</span>.
-            </h2>
+        <div class="home row container_12 fluid white">
+            <div class="landing-content grid_5 offset_1">
+                <div class="home__hat">
+                    <div class="landing-intro">
+                        <span class="first-line">{{$t("landing.hello")}},</span><br/>
+                        {{$t("landing.Iam")}}
+                    </div>
+                </div>
+            </div> 
+            <div class="offset_2 grid_3">
+                <div class="illustration-container">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                </div>
             </div>
-
-            <div class="skills-container">
-                <SkillCover 
-                    :title="t('landing.skills.strategicDesign.hat')" 
-                    :description="t('landing.skills.strategicDesign.description')" />
-                <SkillCover 
-                    :title="t('landing.skills.interactionDesign.hat')" 
-                    :description="t('landing.skills.interactionDesign.description')" />
-            </div> 
-            <div class="findme-container">
-                <FindMeInformation />
-            </div> 
+        </div>
+        <div class="landing-bottom row container_12 fluid white"> 
         </div> 
-     
-        <div class="grid_3">
-            <div class="illustration-container">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-            </div>
-        </div>   
     </div> 
 </template>
 
@@ -37,27 +29,35 @@
 <style lang="scss">
 
     .home{
-        height:90%;
+        height:calc(64vh - 6rem);
         display:block;
-        position:absolute;
+      
         top:0;
         //background-color:$g850;
     }
+
+   
     .home__hat {
         margin-top:10vh;
-        h2 {
-            font-weight:$regular;
+        .first-line {
+        font-size:$p36;
+        font-weight:$bold;
+        margin-bottom:.4rem;
         }
     }
 
-    .yellow-underline {
-        font-weight:$bold;
-        position:relative;
-        background-image: linear-gradient(to right, $focusYellow 0%, $focusYellow 100%);
-        background-repeat: repeat-x; 
-        background-position: 0 100%; 
-        background-size: 100% 1rem;   
+    .landing-bottom {
+        display:block;
+        width:100%;
+        height:40vh;
+        background-image:url('~/assets/images/trame-mountain.png');
+        background-repeat: no-repeat ;
+        background-position:right;
+        background-size:100% 100%;
+        overflow:visible;
     }
+
+  
     .skills-container{
         display:flex;
         align-items: flex-start;
@@ -70,10 +70,10 @@
     .illustration-container{
         //background-color:lightGrey;
         position:relative;
-        width:100%;
-        margin:10rem auto;
+        width:78%;
+        margin:4rem auto;
         height:0;
-        padding-bottom:100%;
+        padding-bottom:78%;
         .circle1 {
             position:absolute;
             right:0;
@@ -95,6 +95,7 @@
         }
 
     }
+ 
 
 </style>
 

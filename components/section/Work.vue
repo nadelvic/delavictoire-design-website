@@ -1,36 +1,21 @@
 <script setup >
     const lang = useI18n().locale.value;
     const { data } = await useAsyncData('posts', () => {  
-        return queryContent().where({section: 'work'}).find();
+        return queryContent().where({section: 'work',locale: lang}).find();
     });
-    //console.log(...data.value);
- 
-    
-    /*const getArticles = (theData) => {
-        let list = [];
-        theData.value.reduce((item) =>{
-            if(item.locale == lang) list.push(item);
-        });
-        return list; 
-    };
-    const articles = getArticles(data);*/
-
     
 </script>
 
 <template>
     <div>
-        <div class="work-content grid_7 offset_1">
-            <h1>{{$t('work.title')}}</h1>   
-            <div v-for="article in data" :key="article._path" class="workcase-container"> 
-                <div v-if="(article.locale == lang)" class="workcase-item" >
-                    <NuxtLink  :to="article._path.replace('/en/','/')" class="workcase-link fs-22">
-                        <h2>{{ article.title }}</h2>
-                        <p>{{ article.short }}</p>
-                    </NuxtLink>     
-                </div>
-                <div v-else class="invisible-item"></div>      
-                </div>         
+        <div class="work-content grid_10 offset_1">
+            <h2>{{$t('work.title')}}</h2>   
+            <div v-for="article in data" :key="article._path" class="workcase-item"> 
+                <NuxtLink  :to="article._path.replace('/en/','/')" class="workcase-link">
+                    <h3>{{ article.title }}</h3>
+                    <p>{{ article.short }}</p>
+                </NuxtLink>     
+            </div>         
         </div>
     </div>
 </template>
@@ -40,9 +25,11 @@
         display:none;
     }
     .work-content {
+        margin: 6rem 0 6rem;
         width:100%;
         display: flex;
         width:100%;
+    
         h1 {
             margin-bottom:2rem;
         }
@@ -77,8 +64,11 @@
             }
         }  
     }
-    .workcase-container{
+    .workcase-item{
+        //background-color:yellow;
         &:first-of-type a.workcase-link {
+            //background-color:red;
+   
             border-top:1px solid $g850;
         }      
     }   

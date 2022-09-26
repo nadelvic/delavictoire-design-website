@@ -11,7 +11,7 @@
 <template>
   <div>
     <Header />
-    <SectionLanding id="Landing" class="section row container_12 fluid white" />
+    <SectionLanding id="Landing"  />
     <SectionWork id="work" class="section row container_12 fluid white" />
    
     <Footer />

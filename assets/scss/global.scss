@@ -48,6 +48,14 @@ h2 {
     font-weight:$bold;
 }
 
+.landing-intro{
+    font-size:$p28;
+}
+
+h3 {
+    font-size:$p28;
+}
+
 .fs-22 p {
     font-size:$p22;
     margin-bottom:1.2rem;
@@ -79,7 +87,13 @@ a {
     background-repeat: repeat-x; 
     background-position: 0% 100%; 
     background-size: 100% 1px;  
-   
-        
-    
+}
+
+.yellow-underline {
+    font-weight:$bold;
+    position:relative;
+    background-image: linear-gradient(to right, $focusYellow 0%, $focusYellow 100%);
+    background-repeat: repeat-x; 
+    background-position: 0 100%; 
+    background-size: 100% 1rem;   
 }

@@ -1,27 +1,27 @@
 {
     "landing" : {
-        "welcome" : {
-            "part1": "Bonjour, je suis",
-            "part2": "Je suis un",
-            "skill1": "designer stratégique",
-            "part3": "et un",
-            "skill2": "designer d'interactions"
-        },
-        "skills": {
-            "strategicDesign" : {
-                "hat" : "En tant que designer stratégique",
-                "description" : "J'accompagne la formulation et la résolution de problématiques pour des systèmes complexes nécéssitant la compréhension de nombreux points de vues et spécialités."
-            },
-            "interactionDesign" : {
-                "hat" : "En tant que designer d'interaction",
-                "description" : "Je conçoit de nouveaux produits numériques en prenant en compte ses usagers : applications métiers, sites web, services numériques …"
-            }
-        },
+        "hello": "Bonjour, je suis Nathan Delavictoire",
+        "Iam": "J'aime concevoir et construire des solutions simples et pertinentes pour répondre à des problèmes complexes. Pour ce faire, j'aime naviguer entre imagination et rationalisation.",
         "findme" : {
             "contactme" : "Vous pouvez me contacter par email : ",
             "located" : "Je suis installé à Paris et je peux travailler partiellement à distance pour des clients dans toute l’europe de l’ouest.",
             "stayTuned": "Revenez vite pour plus de contenu sur ce site\u00A0!"
         }    
+    },
+    "aboutme" : {
+        "title": "A mon propos",
+        "paragraph1": "Je suis un designer de {age} ans toujours curieux d'aprendre des autres, de leurs expériences et de leurs perspectives",
+        "paragraph2": "Mon activité professionnelle se focalise sur le design stratégique et de le design d'intéractions.",
+        "strategicDesign" : {
+            "beginning": "En tant que",
+            "skill" : "Designer stratégique",
+            "description" : "J'accompagne la formulation et la résolution de problématiques pour des systèmes complexes nécéssitant la compréhension de nombreux points de vues et spécialités."
+        },
+        "interactionDesign" : {
+            "beginning": "En tant que",
+            "hat" : "designer d'intéractions",
+            "description" : "Je conçoit de nouveaux produits numériques en prenant en compte ses usagers : applications métiers, sites web, services numériques …"
+        }
     },
     "menu" : {
         "blog" : "Blog",
@@ -32,7 +32,7 @@
         "title": "Mes Services"
     },
     "work": {
-        "title": "Précédents travaux"
+        "title": "Mes travaux"
     },
     "footer": {
         "message1": "Créée et développé par Nathan Delavictoire avec",
