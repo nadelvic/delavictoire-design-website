@@ -1,15 +1,17 @@
-<script setup >
+<script setup lang="ts">
+    //import { onMounted, ref} from 'vue';
     const lang = useI18n().locale.value;
-    const { data } = await useAsyncData('posts', () => {  
-        return queryContent().where({section: 'work',locale: lang}).find();
-    });
+    const { data } =  useAsyncData('posts', () => 
+            queryContent().where({section: 'work',locale: lang}).find()
+    );
+
     
 </script>
 
 <template>
     <div>
-        <div class="work-content grid_10 offset_1">
-            <h2>{{$t('work.title')}}</h2>   
+        <div class="work-content offset_3 grid_6">
+            <h1>{{$t('work.title')}}</h1>   
             <div v-for="article in data" :key="article._path" class="workcase-item"> 
                 <NuxtLink  :to="article._path.replace('/en/','/')" class="workcase-link">
                     <h3>{{ article.title }}</h3>

@@ -1,6 +1,12 @@
 {
+    "header" : {
+        "aboutme": "About me",
+        "work" : "Work",
+        "contact" : "Contact",
+        "articles" : "Articles"
+    },
     "landing" : {
-        "hello": "Hello, I'm Nathan Delavictoire",
+        "hello": "Hello, I'm Nathan Delavictoire.",
         "Iam": "I strive to crack the complexity of making things simple and meaningfull. To do so, I love navigating the grey area between imagination and rationalisation.",
         "findme" : {
             "contactme" : "You may contact me by email",
@@ -11,8 +17,7 @@
     },
     "aboutme" : {
         "title": "About me",
-        "paragraph1": "I'm {age} year old designer and I'm a curious person always eager to learn from other’s perspectives and experiences.",
-        "paragraph2": "My focus as a professional lies mostly in strategic design and interaction design.",
+        "paragraph1": "I'm {age} year old designer and I'm a curious person always eager to learn from other’s perspectives and experiences. My focus as a professional lies mostly in strategic design and interaction design.",
         "strategicDesign" : {
             "beginning": "As a",
             "skill" : "As a strategic designer",
@@ -20,9 +25,14 @@
         },
         "interactionDesign" : {
             "beginning": "As an",
-            "hat" : "interaction designer",
+            "skill" : "interaction designer",
             "description" : "I define and prototype new digital products with a user centric approach : Business applications, Website, Digital Services …"
         }
+    },
+    "contact" : {
+        "title" : "Contact",
+        "message" : "You can reach me by email : ",
+        "copied": "Copied !"
     },
     "menu" : {
         "blog" : "Blog",

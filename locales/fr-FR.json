@@ -1,6 +1,12 @@
 {
+    "header" : {
+        "aboutme": "A mon propos",
+        "work" : "Travaux",
+        "contact" : "Contact",
+        "articles" : "Articles"
+    },
     "landing" : {
-        "hello": "Bonjour, je suis Nathan Delavictoire",
+        "hello": "Bonjour, je suis Nathan Delavictoire.",
         "Iam": "J'aime concevoir et construire des solutions simples et pertinentes pour répondre à des problèmes complexes. Pour ce faire, j'aime naviguer entre imagination et rationalisation.",
         "findme" : {
             "contactme" : "Vous pouvez me contacter par email : ",
@@ -10,8 +16,7 @@
     },
     "aboutme" : {
         "title": "A mon propos",
-        "paragraph1": "Je suis un designer de {age} ans toujours curieux d'aprendre des autres, de leurs expériences et de leurs perspectives",
-        "paragraph2": "Mon activité professionnelle se focalise sur le design stratégique et de le design d'intéractions.",
+        "paragraph1": "Je suis un designer de {age} ans toujours curieux d'aprendre des autres, de leurs expériences et de leurs perspectives. Mon activité professionnelle se focalise sur le design stratégique et le design d'interactions.",
         "strategicDesign" : {
             "beginning": "En tant que",
             "skill" : "Designer stratégique",
@@ -19,14 +24,14 @@
         },
         "interactionDesign" : {
             "beginning": "En tant que",
-            "hat" : "designer d'intéractions",
+            "skill" : "designer d'interactions",
             "description" : "Je conçoit de nouveaux produits numériques en prenant en compte ses usagers : applications métiers, sites web, services numériques …"
         }
     },
-    "menu" : {
-        "blog" : "Blog",
-        "work" : "Mes travaux",
-        "services" : "Mes services"
+    "contact" : {
+        "title" : "Contact",
+        "message" : "Vous pouvez me contacter par email : ",
+        "copied": "Copié !"
     },
     "services": {
         "title": "Mes Services"

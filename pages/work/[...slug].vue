@@ -15,14 +15,33 @@
         statusMessage: 'Not Found',
       })
     );
+    
   }
+  const custom = 'article-layout';
 </script>
 
 <template>
-      <main>
-          <ContentRenderer :v-if="posts" :value="posts" />
-      </main>
+      <NuxtLayout :name="custom">
+        <div class="article-container offset_3 grid_6">
+          <ContentRenderer class="content-md " :v-if="posts" :value="posts" >
+        </ContentRenderer>
+
+        </div>
+       
+      </NuxtLayout>
 </template>
+<style lang="scss">
+  .article-container {
+    margin-top:4rem;
+  }
+
+   h2{
+    text-decoration:none;
+   }
+
+
+
+</style>
 
 
 

@@ -36,7 +36,7 @@ body{
   }
 
 h1 {
-    font-size:$p60;
+    font-size:$p48;
     $font-weight:$bold;
     margin-bottom:.6rem;
 }
@@ -54,6 +54,14 @@ h2 {
 
 h3 {
     font-size:$p28;
+    margin-bottom:.5rem;
+}
+
+h5 {
+    font-size:$p22;
+    font-weight:$regular;
+    color:$g625;
+    margin-bottom:2rem;
 }
 
 .fs-22 p {
@@ -94,6 +102,6 @@ a {
     position:relative;
     background-image: linear-gradient(to right, $focusYellow 0%, $focusYellow 100%);
     background-repeat: repeat-x; 
-    background-position: 0 100%; 
-    background-size: 100% 1rem;   
+    background-position: 0 110%; 
+    background-size: 100% 45%;   
 }

@@ -11,8 +11,10 @@
 <template>
   <div>
     <Header />
-    <SectionLanding id="Landing"  />
-    <SectionWork id="work" class="section row container_12 fluid white" />
+    <SectionLanding id="landing"  />
+    <SectionAboutMe id="aboutme" class="section row container_12 fluid white" />
+    <!--<SectionWork id="work" class="section row container_12 fluid white" />-->
+    <SectionContact id="contact" class="section row container_12 fluid white" />
    
     <Footer />
   </div>

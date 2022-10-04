@@ -7,7 +7,7 @@
             <div class="landing-content grid_5 offset_1">
                 <div class="home__hat">
                     <div class="landing-intro">
-                        <span class="first-line">{{$t("landing.hello")}},</span><br/>
+                        <strong>{{$t("landing.hello")}}</strong><br/>
                         {{$t("landing.Iam")}}
                     </div>
                 </div>
